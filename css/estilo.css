@@ -1,0 +1,112 @@
+:root {
+  --cor-principal: #8B2C2C;         /* Vinho profundo - elegante e marcante */
+  --cor-background: #FFF8F0;        /* Bege claro - suave e confortável para leitura */
+  --cor-destaque: #F4A261;          /* Laranja queimado - ótimo para botões e chamadas */
+  --cor-cabecalho-tabela: #A94438;  /* Vermelho terroso - destaca bem sem agredir os olhos */
+  --cor-corpo-tabela: #FFFFFF;      /* Branco - mantém clareza e contraste */
+  --cor-hover-botao: #E76F51;       /* Coral vibrante - efeito visual agradável ao passar o mouse */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+body {
+  background-color: var(--cor-background);
+  color: #3e3a33;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 30px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--cor-principal);
+  margin-bottom: 15px;
+}
+
+nav {
+  background-color: var(--cor-principal);
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: var(--cor-destaque);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--cor-corpo-tabela);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th {
+  background-color: var(--cor-cabecalho-tabela);
+  color: var(--cor-corpo-tabela);
+  font-size: 16px;
+  padding: 12px;
+  border-bottom: 2px solid #d9cfc4;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #d9cfc4;
+}
+
+tr:nth-child(even) {
+  background-color: #faf8f4;
+}
+
+tr:hover {
+  background-color: var(--cor-destaque);
+  color: white;
+}
+
+button {
+  background-color: var(--cor-destaque);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--cor-hover-botao);
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--cor-principal);
+  height: 70px;
+}
+
+.cabecalho a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/cadastro.css">
+    <title>BiblioTech - Atualizar Cadastro de Alunos</title>
+</head>
+
+<body onload="buscarAluno()">
+    <header class="cabecalho">
+        <a href="/index.html">ÍNICIO</a>
+        <a href="/pages/aluno/lista-aluno.html">ALUNOS</a>
+        <a href="/pages/livro/lista-livro.html">LIVROS</a>
+        <a href="/pages/emprestimo/lista-emprestimo.html">EMPRESTIMOS</a>
+    </header>
+
+    <main class="conteudo-principal">
+        <div class="ctn-titulo">
+            <h2>ATUALIZAR CADASTRO DE ALUNOS</h1>
+        </div>
+        <div class="ctn-formulario">
+            <form onsubmit="enviarFormularioAtualizacao(event)" action="" method="post" class="form-cadastro">
+                <label for="id-aluno">
+                    Id Aluno
+                    <input 
+                    type="number" 
+                    name="id-aluno" 
+                    id="id-aluno"  
+                    readonly>
+                </label>
+
+                <label for="nome-aluno">
+                    Nome *
+                    <input 
+                    type="text" 
+                    name="nome-aluno" 
+                    id="nome-aluno" 
+                    placeholder="Digite o nome do aluno" 
+                    minlength="3" 
+                    required>
+                </label>
+
+                <label for="sobrenome-aluno">
+                    Sobrenome *
+                    <input 
+                    type="text" 
+                    name="sobrenome-aluno" 
+                    id="sobrenome-aluno" 
+                    placeholder="Digite o sobrenome do aluno" 
+                    minlength="3" 
+                    required>
+                </label>
+
+                <label for="data-nascimento">
+                    Data de Nascimento
+                    <input 
+                    type="date" 
+                    name="data-nascimento" 
+                    id="data-nascimento" 
+                    placeholder="Digite a data de nascimento do aluno">
+                </label>
+
+                <label for="endereco-aluno">
+                    Endereço
+                    <input 
+                    type="text" 
+                    name="endereco-aluno" 
+                    id="endereco-aluno" 
+                    placeholder="Digite o endereço do aluno">
+                </label>
+
+                <label for="email-aluno">
+                    Email
+                    <input 
+                    type="email"
+                    name="email-aluno" 
+                    id="email-aluno" 
+                    placeholder="Digite o email do aluno">
+                </label>
+
+                <label for="celular-aluno">
+                    Celular *
+                    <input 
+                    type="tel" 
+                    name="celular-aluno" 
+                    id="celular-aluno" 
+                    placeholder="Digite o celular do aluno"
+                    required>
+                </label>
+
+                <p style="color: red">* Campos obrigatórios</p>
+                <input type="submit" value="ATUALIZAR ALUNO">
+            </form>
+        </div>
+    </main>
+
+    <script src="../../js/aluno.js"></script>
+</body>
+
+</html>

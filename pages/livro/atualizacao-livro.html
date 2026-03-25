@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="stylesheet" href="../../css/cadastro.css">
+    <title>BiblioTech - Atualizar Cadastro de Livros</title>
+</head>
+
+<body onload="buscarLivro()">
+    <header class="cabecalho">
+        <a href="/index.html">ÍNICIO</a>
+        <a href="/pages/aluno/lista-aluno.html">ALUNOS</a>
+        <a href="/pages/livro/lista-livro.html">LIVROS</a>
+        <a href="/pages/emprestimo/lista-emprestimo.html">EMPRESTIMOS</a>
+    </header>
+
+    <main class="conteudo-principal">
+        <div class="ctn-titulo">
+            <h2>ATUALIZAR CADASTRO DE LIVROS</h1>
+        </div>
+        <div class="ctn-formulario">
+            <form onsubmit="enviarFormularioAtualizacao(event)" action="" method="post" class="form-cadastro">
+                <label for="id-livro">
+                    Id Livro
+                    <input 
+                    type="number" 
+                    name="id-livro" 
+                    id="id-livro"  
+                    readonly>
+                </label>
+
+                <label for="titulo-livro">
+                    Título *
+                    <input 
+                    type="text" 
+                    name="titulo-livro" 
+                    id="titulo-livro" 
+                    placeholder="Digite o titulo do livro" 
+                    minlength="3" 
+                    required>
+                </label>
+
+                <label for="autor-livro">
+                    Autor *
+                    <input 
+                    type="text" 
+                    name="autor-livro" 
+                    id="autor-livro" 
+                    placeholder="Digite o autor do livro" 
+                    minlength="3" 
+                    required>
+                </label>
+
+                <label for="editora-livro">
+                    Editora *
+                    <input 
+                    type="text" 
+                    name="editora-livro" 
+                    id="editora-livro" 
+                    placeholder="Digite a editora do livro" 
+                    minlength="3" 
+                    required>
+                </label>
+
+                <label for="ano-publicacao-livro">
+                    Ano Publicação
+                    <input
+                        type="text"
+                        name="ano-publicacao-livro"
+                        id="ano-publicacao-livro"
+                        placeholder="Digite o ano de publicação do livro (4 dígitos)"
+                        inputmode="numeric"
+                        pattern="\d{4}"
+                        minlength="4"
+                        maxlength="4"
+                        title="Digite um ano com 4 dígitos (ex: 2024)">
+                </label>
+
+                <!-- Nescessita solicitar apenas números e sinal de - -->
+                <label for="isbn-livro">
+                    ISBN 
+                    <input 
+                    type="text" 
+                    name="isbn-livro" 
+                    id="isbn-livro" 
+                    placeholder="Digite o ISBN do livro">
+                </label>
+
+                <label for="quantidade-total-livro">
+                    Quantidade Total *
+                    <input 
+                    type="number" 
+                    name="quantidade-total-livro" 
+                    id="quantidade-total-livro" 
+                    placeholder="Digite a quantidade total do livro" 
+                    min="1"
+                    required>
+                </label>
+
+                <label for="quantidade-disponivel-livro">
+                    Quantidade Disponivel *
+                    <input 
+                    type="number" 
+                    name="quantidade-disponivel-livro" 
+                    id="quantidade-disponivel-livro" 
+                    placeholder="Digite a quantidade disponivel do livro" 
+                    required>
+                </label>
+            
+                <label for="valor-aquisicao-livro">
+                    Valor Aquisição 
+                    <input 
+                    type="number" 
+                    name="valor-aquisicao-livro" 
+                    id="valor-aquisicao-livro" 
+                    placeholder="Digite o valor de aquisicao do livro"
+                    min="1">
+                </label>
+
+                <label for="status-livro-emprestado">
+                    Status Livro Emprestado
+                    <input 
+                    type="text" 
+                    name="status-livro-emprestado" 
+                    id="status-livro-emprestado" 
+                    placeholder="Digite o status do livro emprestado">
+                </label>
+
+                <p style="color: red">* Campos obrigatórios</p>
+                <input type="submit" value="ATUALIZAR LIVRO">
+            </form>
+        </div>
+    </main>
+
+    <script src="../../js/livro.js"></script>
+</body>
+
+</html>

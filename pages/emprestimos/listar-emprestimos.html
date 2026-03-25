@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Empréstimos</title>
+  <style>
+    :root {
+      --cor-principal: #8B2C2C;
+      --cor-background: #FFF8F0;
+      --cor-destaque: #F4A261;
+      --cor-cabecalho-tabela: #A94438;
+      --cor-corpo-tabela: #FFFFFF;
+      --cor-hover-botao: #E76F51;
+    }
+
+    * { margin: 0; padding: 0; font-family: "Noto Sans", sans-serif; }
+
+    body { background-color: var(--cor-background); color: #3e3a33; }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--cor-principal);
+      padding: 15px 30px;
+      color: white;
+    }
+
+    header h1 { font-size: 1.8rem; }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    nav a:hover { color: var(--cor-destaque); }
+
+    main {
+      padding: 20px 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: var(--cor-corpo-tabela);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    table caption {
+      caption-side: top;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: var(--cor-principal);
+    }
+
+    th {
+      background-color: var(--cor-cabecalho-tabela);
+      color: var(--cor-corpo-tabela);
+      font-size: 16px;
+      padding: 12px;
+      border-bottom: 2px solid #d9cfc4;
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #d9cfc4;
+    }
+
+    tr:nth-child(even) { background-color: #faf8f4; }
+
+    tr:hover { background-color: var(--cor-destaque); color: white; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Empréstimos</h1>
+  <nav>
+    <a href="../index.html">Página inicial</a>
+    <a href="../aluno/lista-aluno.html">Alunos</a>
+    <a href="../livro/lista-livro.html">Livros</a>
+    <a href="lista-emprestimos.html">Empréstimos</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Lista de Empréstimos</h2>
+
+  <table>
+    <caption>Empréstimos cadastrados</caption>
+    <tr>
+      <th>RA do Aluno</th>
+      <th>Livro</th>
+      <th>Data Empréstimo</th>
+      <th>Data Devolução</th>
+      <th>Status</th>
+    </tr>
+
+    <tr><td>1</td><td>1984</td><td>2024-09-01</td><td>2024-09-15</td><td>Em andamento</td></tr>
+    <tr><td>2</td><td>O Senhor dos Anéis</td><td>2024-09-02</td><td>2024-09-16</td><td>Em andamento</td></tr>
+    <tr><td>3</td><td>A Revolução dos Bichos</td><td>2024-09-03</td><td>2024-09-17</td><td>Em andamento</td></tr>
+    <tr><td>5</td><td>Dom Quixote</td><td>2024-09-04</td><td>2024-09-18</td><td>Em andamento</td></tr>
+    <tr><td>4</td><td>O Hobbit</td><td>2024-09-05</td><td>2024-09-19</td><td>Em andamento</td></tr>
+    <tr><td>6</td><td>O Pequeno Príncipe</td><td>2024-09-06</td><td>2024-09-20</td><td>Em andamento</td></tr>
+    <tr><td>7</td><td>Orgulho e Preconceito</td><td>2024-09-07</td><td>2024-09-21</td><td>Em andamento</td></tr>
+    <tr><td>8</td><td>O Conde de Monte Cristo</td><td>2024-09-08</td><td>2024-09-22</td><td>Em andamento</td></tr>
+    <tr><td>10</td><td>Moby Dick</td><td>2024-09-09</td><td>2024-09-23</td><td>Em andamento</td></tr>
+    <tr><td>9</td><td>Guerra e Paz</td><td>2024-09-10</td><td>2024-09-24</td><td>Em andamento</td></tr>
+  </table>
+</main>
+
+</body>
+</html>

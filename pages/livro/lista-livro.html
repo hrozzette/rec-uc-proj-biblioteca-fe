@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Livros</title>
+  <style>
+    :root {
+      --cor-principal: #8B2C2C;
+      --cor-background: #FFF8F0;
+      --cor-destaque: #F4A261;
+      --cor-cabecalho-tabela: #A94438;
+      --cor-corpo-tabela: #FFFFFF;
+      --cor-hover-botao: #E76F51;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Noto Sans", sans-serif;
+    }
+
+    body {
+      background-color: var(--cor-background);
+      color: #3e3a33;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--cor-principal);
+      padding: 15px 30px;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: var(--cor-destaque);
+    }
+
+    main {
+      padding: 20px 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: var(--cor-corpo-tabela);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    table caption {
+      caption-side: top;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: var(--cor-principal);
+    }
+
+    th {
+      background-color: var(--cor-cabecalho-tabela);
+      color: var(--cor-corpo-tabela);
+      font-size: 16px;
+      padding: 12px;
+      border-bottom: 2px solid #d9cfc4;
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #d9cfc4;
+    }
+
+    tr:nth-child(even) {
+      background-color: #faf8f4;
+    }
+
+    tr:hover {
+      background-color: var(--cor-destaque);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Livros</h1>
+  <nav>
+    <a href="../index.html">Página inicial</a>
+    <a href="cadastrar.html">Cadastrar Livro</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Lista de Livros</h2>
+
+  <table>
+    <caption>Livros cadastrados</caption>
+    <tr>
+      <th>Título</th>
+      <th>Autor</th>
+      <th>Editora</th>
+      <th>Ano</th>
+      <th>ISBN</th>
+      <th>Qtd Total</th>
+      <th>Qtd Disponível</th>
+      <th>Valor</th>
+      <th>Status</th>
+    </tr>
+
+    <tr><td>O Senhor dos Anéis</td><td>J.R.R. Tolkien</td><td>HarperCollins</td><td>1954</td><td>978-0007525546</td><td>10</td><td>10</td><td>R$150,00</td><td>Disponível</td></tr>
+    <tr><td>1984</td><td>George Orwell</td><td>Companhia das Letras</td><td>1949</td><td>978-8535906770</td><td>8</td><td>8</td><td>R$90,00</td><td>Disponível</td></tr>
+    <tr><td>Dom Quixote</td><td>Miguel de Cervantes</td><td>Penguin Classics</td><td>1605</td><td>978-0142437230</td><td>6</td><td>6</td><td>R$120,00</td><td>Disponível</td></tr>
+    <tr><td>O Pequeno Príncipe</td><td>Antoine de Saint-Exupéry</td><td>Agir</td><td>1943</td><td>978-8522008731</td><td>12</td><td>12</td><td>R$50,00</td><td>Disponível</td></tr>
+    <tr><td>A Revolução dos Bichos</td><td>George Orwell</td><td>Penguin</td><td>1945</td><td>978-0141036137</td><td>7</td><td>7</td><td>R$80,00</td><td>Disponível</td></tr>
+    <tr><td>O Hobbit</td><td>J.R.R. Tolkien</td><td>HarperCollins</td><td>1937</td><td>978-0007458424</td><td>9</td><td>9</td><td>R$140,00</td><td>Disponível</td></tr>
+    <tr><td>O Conde de Monte Cristo</td><td>Alexandre Dumas</td><td>Penguin Classics</td><td>1844</td><td>978-0140449266</td><td>5</td><td>5</td><td>R$110,00</td><td>Disponível</td></tr>
+    <tr><td>Orgulho e Preconceito</td><td>Jane Austen</td><td>Penguin Classics</td><td>1813</td><td>978-0141439518</td><td>7</td><td>7</td><td>R$90,00</td><td>Disponível</td></tr>
+    <tr><td>Moby Dick</td><td>Herman Melville</td><td>Penguin Classics</td><td>1851</td><td>978-0142437247</td><td>4</td><td>4</td><td>R$100,00</td><td>Disponível</td></tr>
+    <tr><td>Guerra e Paz</td><td>Liev Tolstói</td><td>Companhia das Letras</td><td>1869</td><td>978-8535922343</td><td>3</td><td>3</td><td>R$130,00</td><td>Disponível</td></tr>
+    <tr><td>É Assim que Acaba</td><td>Colleen Hoover</td><td>Galera Record</td><td>2016</td><td>978-8501112514</td><td>10</td><td>10</td><td>R$85,00</td><td>Disponível</td></tr>
+    <tr><td>Verity</td><td>Colleen Hoover</td><td>Galera Record</td><td>2018</td><td>978-8501118554</td><td>8</td><td>8</td><td>R$90,00</td><td>Disponível</td></tr>
+    <tr><td>A Cinco Passos de Você</td><td>Rachael Lippincott</td><td>Globo Alt</td><td>2019</td><td>978-8525067421</td><td>7</td><td>7</td><td>R$70,00</td><td>Disponível</td></tr>
+    <tr><td>Os Sete Maridos de Evelyn Hugo</td><td>Taylor Jenkins Reid</td><td>Paralela</td><td>2017</td><td>978-8551002933</td><td>9</td><td>9</td><td>R$95,00</td><td>Disponível</td></tr>
+    <tr><td>Malibu Renasce</td><td>Taylor Jenkins Reid</td><td>Paralela</td><td>2021</td><td>978-6559810387</td><td>6</td><td>6</td><td>R$100,00</td><td>Disponível</td></tr>
+    <tr><td>A Paciente Silenciosa</td><td>Alex Michaelides</td><td>Record</td><td>2019</td><td>978-8501116543</td><td>8</td><td>8</td><td>R$85,00</td><td>Disponível</td></tr>
+    <tr><td>Antes Que o Café Esfrie</td><td>Toshikazu Kawaguchi</td><td>Valentina</td><td>2020</td><td>978-8554421748</td><td>6</td><td>6</td><td>R$80,00</td><td>Disponível</td></tr>
+    <tr><td>A Biblioteca da Meia-Noite</td><td>Matt Haig</td><td>Bertrand Brasil</td><td>2021</td><td>978-6558380317</td><td>7</td><td>7</td><td>R$90,00</td><td>Disponível</td></tr>
+    <tr><td>Teto Para Dois</td><td>Beth OLeary</td><td>Intrínseca</td><td>2019</td><td>978-8551005415</td><td>5</td><td>5</td><td>R$75,00</td><td>Disponível</td></tr>
+    <tr><td>Tudo é Rio</td><td>Carla Madeira</td><td>Record</td><td>2014</td><td>978-8501119599</td><td>4</td><td>4</td><td>R$70,00</td><td>Disponível</td></tr>
+  </table>
+</main>
+
+</body>
+</html>

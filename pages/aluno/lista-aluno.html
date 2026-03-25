@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Alunos</title>
+  <style>
+    :root {
+      --cor-principal: #8B2C2C;         /* Vinho profundo */
+      --cor-background: #FFF8F0;        /* Bege claro */
+      --cor-destaque: #F4A261;          /* Laranja queimado */
+      --cor-cabecalho-tabela: #A94438;  /* Vermelho terroso */
+      --cor-corpo-tabela: #FFFFFF;      /* Branco */
+      --cor-hover-botao: #E76F51;       /* Coral vibrante */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Noto Sans", sans-serif;
+    }
+
+    body {
+      background-color: var(--cor-background);
+      color: #3e3a33;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--cor-principal);
+      padding: 15px 30px;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: var(--cor-destaque);
+    }
+
+    main {
+      padding: 20px 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: var(--cor-corpo-tabela);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    table caption {
+      caption-side: top;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: var(--cor-principal);
+    }
+
+    th {
+      background-color: var(--cor-cabecalho-tabela);
+      color: var(--cor-corpo-tabela);
+      font-size: 16px;
+      padding: 12px;
+      border-bottom: 2px solid #d9cfc4;
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #d9cfc4;
+    }
+
+    tr:nth-child(even) {
+      background-color: #faf8f4;
+    }
+
+    tr:hover {
+      background-color: var(--cor-destaque);
+      color: white;
+    }
+
+    button {
+      background-color: var(--cor-destaque);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: var(--cor-hover-botao);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Alunos</h1>
+  <nav>
+    <a href="../index.html">Página inicial</a>
+    <a href="cadastrar.html">Cadastrar Aluno</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Lista de Alunos</h2>
+
+  <table>
+    <caption>Alunos cadastrados</caption>
+    <tr>
+      <th>Nome</th>
+      <th>Sobrenome</th>
+      <th>Data de nascimento</th>
+      <th>Endereço</th>
+      <th>Email</th>
+      <th>Celular</th>
+    </tr>
+
+    <tr><td>Conor</td><td>McGregor</td><td>2005-01-15</td><td>Rua UFC, 123</td><td>mcgregor@ufc.com</td><td>16998959876</td></tr>
+    <tr><td>Amanda</td><td>Nunes</td><td>2004-03-22</td><td>Rua UFC, 456</td><td>amanda.nunes@ufc.com</td><td>16995992305</td></tr>
+    <tr><td>Angelina</td><td>Jolie</td><td>2003-07-10</td><td>Rua Hollywood, 789</td><td>jolie@cinema.com</td><td>16991915502</td></tr>
+    <tr><td>Natalie</td><td>Portman</td><td>2002-11-05</td><td>Rua Hollywood, 101</td><td>natalie.portman@cinema.com</td><td>16993930703</td></tr>
+    <tr><td>Shaquille</td><td>ONeal</td><td>2004-09-18</td><td>Rua NBA, 202</td><td>shaquille@gmail.com</td><td>16993937030</td></tr>
+    <tr><td>Harry</td><td>Kane</td><td>2000-05-18</td><td>Rua Futebol, 2024</td><td>kane@futi.com</td><td>16998951983</td></tr>
+    <tr><td>Jaqueline</td><td>Carvalho</td><td>2001-12-10</td><td>Rua Volei, 456</td><td>jack@volei.com</td><td>16991993575</td></tr>
+    <tr><td>Sheilla</td><td>Castro</td><td>2003-04-25</td><td>Rua Volei, 2028</td><td>sheilla.castro@volei.com</td><td>16981974547</td></tr>
+    <tr><td>Gabriela</td><td>Guimarães</td><td>2007-08-19</td><td>Rua Volei, 2028</td><td>gaby@volei.com</td><td>16983932215</td></tr>
+    <tr><td>Magic</td><td>Johnson</td><td>2003-07-08</td><td>Rua NBA, 1999</td><td>magic@gmail.com</td><td>16993932020</td></tr>
+
+    <tr><td>Carla</td><td>Peixoto</td><td>2007-05-20</td><td>Rua Doutor Euclides, 992</td><td>carla_peixoto@mabeitex.com.br</td><td>1698606752</td></tr>
+    <tr><td>Ruan Kevin Iago</td><td>Pereira</td><td>1998-07-12</td><td>Rua São Benedito, 948</td><td>ruan.kevin.pereira@balaiofilmes.com.br</td><td>16996496296</td></tr>
+    <tr><td>Thiago Otávio</td><td>Santos</td><td>1985-04-25</td><td>Rua Viela Dez, 505</td><td>thiagootaviosantos@salvagninigroup.com</td><td>16996450592</td></tr>
+    <tr><td>Isabel Isabelly</td><td>da Cunha</td><td>1990-04-13</td><td>Rua Sebastião Gonçalves do Nascimento, 997</td><td>isabel_dacunha@geopx.com.br</td><td>16988514483</td></tr>
+    <tr><td>Alexandre Eduardo</td><td>da Mata</td><td>2001-09-22</td><td>Rua Luís Edmundo, 693</td><td>alexandre_eduardo_damata@zigotto.com.br</td><td>16985176694</td></tr>
+    <tr><td>Marcos Vinicius Daniel, Leonardo</td><td>Rodrigues</td><td>1999-10-03</td><td>Rua Rafael Chiarioni Alfano, 633</td><td>marcos-rodrigues71@publicarbrasil.com.br</td><td>16981954756</td></tr>
+    <tr><td>Renan César</td><td>Moraes</td><td>1994-06-25</td><td>Rua Maria do Céu Correia, 787</td><td>renan-moraes78@ramiresmotors.com.br</td><td>16981219126</td></tr>
+    <tr><td>Elias Geraldo</td><td>Brito</td><td>2006-02-26</td><td>Rua Cacimba, 391</td><td>elias_geraldo_brito@globomail.com</td><td>16997011338</td></tr>
+    <tr><td>Alice Bárbara</td><td>Barbosa</td><td>1975-02-18</td><td>Rua Vergílio Pavan, 528</td><td>alice.barbara.barbosa@acaoi.com.br</td><td>16988438010</td></tr>
+    <tr><td>Levi Lucca</td><td>Aparício</td><td>1980-02-09</td><td>Rua Estrada José da Silva Júnior, 247</td><td>levi_aparicio@kantoferramentaria.com.br</td><td>16991377417</td></tr>
+  </table>
+</main>
+
+</body>
+</html>

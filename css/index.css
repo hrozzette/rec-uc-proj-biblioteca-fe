@@ -1,0 +1,29 @@
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+
+    height: calc(100vh - 70px); /* CALCULA O TAMANHO TOTAL DO VIEWPORT E SUBTRAI 70 PIXEL DO CABEÇALHO */
+}
+
+.ctn-esquerdo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.ctn-esquerdo img {
+   width: 40%;
+   margin-top: 5%;
+}
+
+.ctn-direito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.ctn-direito img {
+    width: 80%;
+}
